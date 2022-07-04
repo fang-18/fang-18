@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    user-select: none;
+}
+
+.container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../images/00.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.form {
+    width: 450px;
+    height: 330px;
+    background-color: rgba(255, 255, 255, .3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.container .form .head-h1 h1 {
+    text-align: center;
+    margin: 25px;
+    font-size: 2.8em;
+    color: rgba(50, 50, 50, 0.8);
+}
+
+
+.form .item::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.form .left {
+    float: left;
+    width: 25%;
+    text-align: right;
+    box-sizing: border-box;
+    padding-top: 7px;
+}
+
+.form .left::after {
+    content: "：";
+}
+
+.form .right {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.form .right input[type=text],
+.form .right input[type=password] {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form .right input:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px #fff;
+}
+
+.form .error {
+    color: #f40;
+    margin-left: 25%;
+    font-size: 14px;
+    visibility: hidden;
+    height: 30px;
+    line-height: 30px;
+}
+
+.form .has-error .error {
+    visibility: visible;
+}
+
+.form .form-item.has-error .right input {
+    border-color: #f40;
+    box-shadow: none;
+}
+
+.form .has-error .left {
+    color: #f40;
+}
+
+.form .form-item .log {
+    width: 100%;
+}
+
+.form .form-item .lefts {
+    float: left;
+    margin-left: 25%;
+
+}
+
+.form .form-item .rights {
+    float: right;
+    margin-right: 25%;
+
+}
+.form .form-item .lnone {
+    float: left;
+    margin-left: 25%;
+
+}
+.form .form-item .rnone{
+    float: right;
+    margin-right: 25%;
+}
+
+.form .form-item .button button {
+    width: 80px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.form .form-item .button button:active {
+    background-color: rgba(255, 255, 255, .5);
+}

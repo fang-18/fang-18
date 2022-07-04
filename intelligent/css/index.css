@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    /* width: 0; */
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 600px;
+    background-color: #eee;
+    position: relative;
+    height: 100vh;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.header-name {
+    line-height: 50px;
+    text-align: center;
+    background-color: grey;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.f-return a img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.content {
+    /* height: calc(100vh - 90px); */
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    bottom: 60px;
+    overflow-y: scroll;
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 0 0 10px 10px;
+}
+
+.avator {
+    width: 30px;
+    height: 30px;
+}
+
+.mine {
+    float: right;
+    width: 60%;
+    margin: 10px;
+}
+
+.robot {
+    float: left;
+    width: 60%;
+    margin: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.mine .avator {
+    float: right;
+}
+
+.mine .text {
+    float: right;
+    background-color: greenyellow;
+}
+
+.robot .avator {
+    float: left;
+}
+
+.robot .text {
+    float: left;
+    background-color: #fff;
+}
+
+.text {
+    line-height: 30px;
+    /* 设置最大的宽度 */
+    max-width: 80%;
+    margin: 0 5px;
+    padding: 0 10px;
+    position: relative;
+    word-break: break-all;
+    border-radius: 5px;
+}
+
+.text::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    position: absolute;
+    top: 10px;
+}
+
+.mine .text::after {
+    border-left-color: greenyellow;
+    right: -10px;
+
+}
+
+.robot .text::after {
+    border-right-color: #fff;
+    left: -10px;
+}
+
+#message {
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1em;
+    margin: 10px;
+}
+
+#send {
+    width: 80px;
+    height: 40px;
+    vertical-align: middle;
+    border-radius: 10px;
+    background-color: greenyellow;
+    border: none;
+    margin: 10px;
+}

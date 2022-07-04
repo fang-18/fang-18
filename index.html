@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>休闲游</title>
+    <link rel="stylesheet" href="./login/css/index.css">
+    <link rel="icon" href="./login/F-01.svg">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form">
+            <div class="head-h1">
+                <h1>用户登录</h1>
+            </div>
+            <div class="form-item" data-field-container="loginId">
+                <div class="item">
+                    <div class="left">
+                        账号
+                    </div>
+                    <div class="right">
+                        <input data-field-listener="input" type="text" data-field placeholder=" 请输入账号" maxlength="16"
+                            name="name" id="name">
+                    </div>
+                </div>
+                <div class="error">
+                    错误消息
+                </div>
+            </div>
+            <div class="form-item" data-field-container="pwd">
+                <div class="item">
+                    <div class="left">
+                        密码
+                    </div>
+                    <div class="right">
+                        <input data-field data-field-listener="input" data-field-trigger="pwdAgain,loginId"
+                            type="password" placeholder=" 请输入密码" maxlength="16" name="pwd" id="pwd">
+                    </div>
+                </div>
+                <div class="error">
+                    错误消息
+                </div>
+            </div>
+            <div class="form-item logpwd" data-field-container="pwdAgain" style="display: none;">
+                <div class="item">
+                    <div class="left">
+                        确认密码
+                    </div>
+                    <div class="right">
+                        <input type="password" data-field placeholder=" 请再次输入密码" maxlength="16" name="pwdAgain"
+                            id="pwdAgain">
+                    </div>
+                </div>
+                <div class="error">
+                    错误消息
+                </div>  
+            </div>
+            <div class="form-item">
+                <div class="button lefts" style="display: block;">
+                    <button type="button">登录</button>
+                </div>
+                <div class="button lnone">
+                    <button style="display: none;">登录</button>
+                </div>
+                <div class="button rnone" style="display: block;">
+                    <button type="button">注册</button>
+                </div>
+                <div class="button rights">
+                    <button type="button" style="display: none;">注册</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="./login/js/jquery-3.4.1.min.js"></script>
+<script src="./login/js/formvalidator.js"></script>
+<script src="./login/js/index.js"></script>
+</html>
